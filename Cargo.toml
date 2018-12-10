@@ -10,6 +10,9 @@ categories = ["development-tools"]
 
 build = "build.rs"
 
+[patch.crates-io]
+rls-analysis = { git = "https://github.com/rust-dev-tools/rls-analysis", rev = "23359b93e6accbe5f45e2fe2089db31955e4008e" }
+
 [dependencies]
 cargo = { git = "https://github.com/rust-lang/cargo", rev = "b3d0b2e545b61d4cd08096911724b7d49d213f73" }
 cargo_metadata = "0.6"
