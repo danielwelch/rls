@@ -10,9 +10,6 @@ categories = ["development-tools"]
 
 build = "build.rs"
 
-[patch.crates-io]
-rls-analysis = { git = "https://github.com/rust-dev-tools/rls-analysis", rev = "23359b93e6accbe5f45e2fe2089db31955e4008e" }
-
 [dependencies]
 cargo = { git = "https://github.com/rust-lang/cargo", rev = "b3d0b2e545b61d4cd08096911724b7d49d213f73" }
 cargo_metadata = "0.6"
@@ -28,7 +25,8 @@ num_cpus = "1"
 racer = { version = "=2.1.13", default-features = false }
 rand = "0.5.5"
 rayon = "1"
-rls-analysis = "0.16.10"
+#rls-analysis = "0.16.10"
+rls-analysis = { git = "https://github.com/rust-dev-tools/rls-analysis", rev = "23359b93e6accbe5f45e2fe2089db31955e4008e" }
 rls-blacklist = "0.1.3"
 rls-data = { version = "0.18.1", features = ["serialize-serde", "serialize-rustc"] }
 rls-rustc = "0.5.0"
